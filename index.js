@@ -21,8 +21,6 @@ app.get("/", (req, res) => {
 });
 
 app.post("/auth-member/auth/login", (req, res) => {
-  console.log(req.body);
-
   var options = {
     uri: API_URL + "/auth-member/auth/login",
     formData: req.body
