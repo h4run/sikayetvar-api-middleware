@@ -12,6 +12,10 @@ const API_URL = "https://api.sikayetvar.com";
 const username = "harunn.memis@gmail.com";
 const password = "hrn1234";
 
+app.get("/", (req, res) => {
+  res.send("hello");
+});
+
 app.post("/auth-member/auth/login", (req, res) => {
   const data = {
     grant_type: "password",
