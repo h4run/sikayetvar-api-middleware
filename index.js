@@ -4,8 +4,6 @@ var cors = require("cors");
 
 const port = 8080;
 
-// var request = require("request"),
-
 var cloudscraper = require("cloudscraper");
 app.use(cors());
 
