@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 var cors = require("cors");
 
-const port = 80;
+const port = process.env.PORT || 80;
 
 var cloudscraper = require("cloudscraper");
 app.use(cors());
